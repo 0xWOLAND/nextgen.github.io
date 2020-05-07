@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">-->
+    <title>NextGen Magazine</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="/">
+            <h1 id="title">NextGen</h1>
+        </a>
+        <h2></h2>
+        <a href="home.html">
+            <h2 id="home">HOME</h2>
+        </a>
+        <a href="about.html">
+            <h2 id="about">ABOUT</h2>
+        </a>
+    </div>
+    {%block content %} {% endblock %}
+</body>
+<script>
+    if (window.location.pathname == "about.html") {
+        document.getElementById("about").style.fontWeight = "500";
+    } else {
+        document.getElementById("home").style.fontWeight = "500";
+    }
+</script>
+
+</html>
