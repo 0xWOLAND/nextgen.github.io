@@ -1,8 +1,38 @@
-{% extends "base.html" %} {% block content %}
-<div id="parallax-image">
-    <h1 id="center-title">NextGen Magazine</h1>
-    <h3 id="center-title-description">TAKING A DEEP DIVE INTO THE FUTURE OF TECHNOLOGY</h3>
-</div>
+<!DOCTYPE html>
+<html>
 
-<div id="test"></div>
-{% endblock %}
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">-->
+    <title>NextGen Magazine</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="/">
+            <h1 id="title">NextGen</h1>
+        </a>
+        <h2></h2>
+        <a href="home.html">
+            <h2 id="home">HOME</h2>
+        </a>
+        <a href="about.html">
+            <h2 id="about">ABOUT</h2>
+        </a>
+    </div>
+    <div id="parallax-image">
+        <h1 id="center-title">NextGen Magazine</h1>
+        <h3 id="center-title-description">TAKING A DEEP DIVE INTO THE FUTURE OF TECHNOLOGY</h3>
+    </div>
+
+    <div id="test"></div>
+</body>
+<script>
+    if (window.location.pathname == "about.html") {
+        document.getElementById("about").style.fontWeight = "500";
+    } else {
+        document.getElementById("home").style.fontWeight = "500";
+    }
+</script>
+
+</html>
