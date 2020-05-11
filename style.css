@@ -53,13 +53,15 @@ body {
 }
 
 #about,
-#home {
+#home,
+#reflection {
     color: #2b2b2b;
     transition: 200ms ease-in-out;
 }
 
 #about:hover,
-#home:hover {
+#home:hover,
+#reflection:hover {
     color: #fdc011;
     transition: 200ms ease-in-out;
 }
@@ -87,12 +89,13 @@ body {
     padding: 0 20px 0 20px;
     background: white;
     display: grid;
-    grid-template-columns: 140px auto 100px 100px;
+    grid-template-columns: 140px auto 110px 110px 110px;
     grid-template-rows: 70px;
     justify-items: center;
     align-items: center;
-    column-gap: 10px;
-    box-shadow: 0 0 10px black;
+    column-gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #magazine_info {
@@ -173,7 +176,6 @@ body {
 .mySlides {
     display: block;
     justify-items: center;
-    margin: 50px;
 }
 
 
